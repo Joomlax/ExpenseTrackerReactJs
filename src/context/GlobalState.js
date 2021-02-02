@@ -18,7 +18,7 @@ export const GlobalContext = createContext(initialState);
 
 //Provide Component
 
-export const GlobalProvide = ({ children }) => {
+export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   return (
